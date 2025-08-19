@@ -1,0 +1,114 @@
+🔰 Level 1 Basics (1-20)
+
+[√] 1. Find the sum of all elements in an array.
+[√] 2. Count the number of even elements.
+[√] 3. Count the number of odd elements.
+[√] 4. Find the maximum element.
+[√] 5. Find the minimum element.
+[√] 6. Print the array in reverse order.
+[√] 7. Copy one array to another.
+[√] 8. Search for a specific element (linear search).
+[√] 9. Count frequency of a given number.
+[√] 10. Count how many elements are positive, negative, or zero.
+[√] 11. Calculate the average of elements.
+[√] 12. Print only the even elements.
+[√] 13. Print only the odd elements.
+[√] 14. Replace all negative numbers with 0.
+[√] 15. Check if a number exists in the array.
+[√] 16. Find the index of a given element.
+[√] 17. Multiply all elements in the array.
+[√] 18. Find the total number of elements divisible by 3.
+[√] 19. Swap the first and last element of the array.
+[√] 20. Print elements at even indices.
+
+⏫ Level 2: Slightly Logical (21-40)
+
+[√] 21. Count the number of duplicate elements.
+[√] 22. Remove duplicates (print unique elements).
+[x] 23. Find the second largest element.
+[x] 24. Find the second smallest element.
+[√] 25. Check if the array is sorted (ascending).
+[x] 26. Reverse an array in-place.
+[√] 27. Find the difference between the max and min element.
+[√] 28. Count how many elements are greater than a given number.
+[ ] 29. Shift all elements to the right by one.
+[ ] 30. Shift all elements to the left by one.
+[ ] 31. Rotate an array by k positions (left).
+[ ] 32. Rotate an array by k positions (right).
+[ ] 33. Sort the array using bubble sort.
+[ ] 34. Sort the array using selection sort.
+[√] 35. Print all elements greater than the average.
+[ ] 36. Insert an element at a specific index.
+[ ] 37. Delete an element from a specific index.
+[ ] 38. Find all indexes of a given number.
+[ ] 39. Replace a given element with another number.
+[ ] 40. Count how many times each element appears (frequency map).
+
+🔄 Level 3: Pattern-Based Thinking (41-60)
+
+[ ] 41. Find the element that appears only once (others appear twice).
+[ ] 42. Move all zeroes to the end.
+[ ] 43. Move all negative elements to one side.
+[ ] 44. Count pairs whose sum is equal to a given number.
+[ ] 45. Check if the array is a palindrome.
+[ ] 46. Check if all elements are unique.
+[ ] 47. Find the common elements in two arrays.
+[ ] 48. Merge two arrays.
+[ ] 49. Merge two sorted arrays into a single sorted array.
+[ ] 50. Find the maximum product of two elements.
+[ ] 51. Find the element with the highest frequency.
+[ ] 52. Count the number of subarrays.
+[ ] 53. Find the sum of all subarrays (brute force).
+[ ] 54. Find all subarrays with even sum.
+[ ] 55. Print all pairs with a given sum.
+[ ] 56. Count elements that are greater than all elements to their right.
+[ ] 57. Find the number of local minima.
+[ ] 58. Find the number of local maxima.
+[ ] 59. Replace each element with the sum of its previous and next.
+[ ] 60. Check if array contains consecutive integers (unsorted).
+
+🧠 Level 4 Logic Building & Pattern Matching (61-80):
+
+[ ] 61. Find the longest consecutive increasing subsequence.
+[ ] 62. Find the longest consecutive decreasing subsequence.
+[ ] 63. Count number of times array elements increase.
+[ ] 64. Count number of times array elements decrease.
+[ ] 65. Find the first repeating element.
+[ ] 66. Find the last repeating element.
+[ ] 67. Find the first non-repeating element.
+[ ] 68. Find the equilibrium index (left sum = right sum).
+[ ] 69. Rearrange array so that even index has even numbers and odd index has odd.
+[ ] 70. Sort 0s, 1s, and 2s in the array.
+[ ] 71. Rearrange array in alternate positive and negative items.
+[ ] 72. Calculate prefix sum of array.
+[ ] 73. Calculate suffix sum of array.
+[ ] 74. Check if array can be made non-decreasing by modifying at most one element.
+[ ] 75. Find peak element (greater than neighbors).
+[ ] 76. Count number of inversions.
+[ ] 77. Rearrange array to maximize sum of arr[i]*i.
+[ ] 78. Find difference between sum of even and odd indexed elements.
+[ ] 79. Find the most frequent element in first k elements.
+[ ] 80. Find the smallest positive missing number.
+
+🚀 Level 5: Logic Polishing (81-100)
+
+[ ] 81. Find the sum of alternating elements (1st - 2nd + 3rd - 4th...).
+[ ] 82. Print array in wave form.
+[ ] 83. Create an array with alternating max/min from original sorted array.
+[ ] 84. Check if two arrays are equal (same elements, same frequency).
+[ ] 85. Check if array is a rotated version of a sorted array.
+[ ] 86. Find minimum number of swaps to sort array.
+[ ] 87. Replace each element with the greatest element to its right.
+[ ] 88. Split array into two equal sum subarrays (if possible).
+[ ] 89. Check if array contains duplicate within k distance.
+[ ] 90. Find the largest subarray with 0 sum.
+[ ] 91. Count how many times a number appears more than n/2 times (if any).
+[ ] 92. Find the number that appears odd number of times.
+[ ] 93. Find the number that appears even number of times.
+[ ] 94. Find pairs with difference k.
+[ ] 95. Find the index with max difference (j > i and arr[j] > arr[i]).
+[ ] 96. Find k largest elements.
+[ ] 97. Find the sum of the k smallest elements.
+[ ] 98. Replace every element with the next greater element.
+[ ] 99. Count number of elements smaller than each element.
+[ ] 100. Rearrange elements by frequency (higher frequency comes first).
