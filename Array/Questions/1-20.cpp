@@ -7,9 +7,7 @@ void one(){
     int size = sizeof(arr)/sizeof(arr[0]);
     int sum = 0;
     for (int i = 0; i < size; i++)
-    {
         sum += arr[i];
-    }
     cout<<sum;
 }
 void two(){
@@ -17,12 +15,8 @@ void two(){
     int size = sizeof(arr)/sizeof(arr[0]);
     int count = 0;
     for (int i = 0; i < size; i++)
-    {
         if (arr[i] % 2 == 0)
-        {
             count++;
-        }
-    }
     cout<<count<<endl;
 }
 void three(){
@@ -30,12 +24,8 @@ void three(){
     int size = sizeof(arr)/sizeof(arr[0]);
     int count = 0;
     for (int i = 0; i < size; i++)
-    {
         if (arr[i] % 2 != 0)
-        {
             count++;
-        }
-    }
     cout<<count<<endl;
 }
 void four(){
@@ -44,13 +34,10 @@ void four(){
     int count = arr[0];//1
     int largest = 0;//1
     for (int i = 0; i < size; i++)
-    {
-        if (arr[i] >= count)
-        {
+        if (arr[i] >= count){
             count = arr[i];
             largest = arr[i];
         }
-    }
     cout<<largest;
 }
 void five(){
@@ -59,33 +46,26 @@ void five(){
     int count = arr[0];
     int smallest = 0;
     for (int i = 0; i < size; i++)
-    {
-        if (arr[i] <= count)
-        {
+        if (arr[i] <= count){
             count = arr[i];
             smallest = arr[i];
         }
-    }
     cout<<smallest;
 }
 void six(){
     int arr[] = {10,2,3,40,5,6,1,8};
     int size = sizeof(arr)/sizeof(arr[0]);
     for (int i = size - 1; i >= 0; i--)
-    {
         cout<<arr[i]<<" ";
-    }cout<<endl;
+    cout<<endl;
     for (int i = 1; i < size + 1; i++)
-    {
         cout<<arr[size - i]<<" ";
-    }
 }
 void seven(){
     int arr[] = {10,2,3,40,5,6,1,8};
     int size = sizeof(arr)/sizeof(arr[0]);
     int tempArr[size];
-    for (int i = 0; i < size; i++)
-    {
+    for (int i = 0; i < size; i++){
         tempArr[i] = arr[i];
         cout<<tempArr[i]<<" ";
     }
@@ -96,17 +76,12 @@ void eight(){
     int search = 5;
     int count = 0;
     for (int i = 0; i < size; i++)
-    {
-        if (arr[i] == search)
-        {
+        if (arr[i] == search){
             count++;
             cout<<search<<" is found at ["<<i<<"]th Location "<<count<<" Times"<<endl;
         }
-    }
     if (count = 0)
-    {
         cout<<"Element Not found";
-    }
 }
 void nine(){
     int arr[] = {10,2,3,40,5,6,1,8, 5, 5};
@@ -114,18 +89,13 @@ void nine(){
     int search = 5;
     int count = 0;
     for (int i = 0; i < size; i++)
-    {
-        if (arr[i] == search)
-        {
+        if (arr[i] == search){
             count++;
         }
-    }
     if (count != 0)
-    {
         cout<<"Frequency of "<<search<<" is "<<count<<" times";
-    }else{
+    else
         cout<<"Element Not Found";
-    }
 }
 void ten(){
     int arr[] = {0,2,3,0,5,6,-1,8, 5, -69};
@@ -134,16 +104,12 @@ void ten(){
     int negative = 0;
     int zero = 0;
     for (int i = 0; i < size; i++)
-    {
         if (arr[i] == 0)
-        {
             zero++;
-        }else if(arr[i] < 0){
+        else if(arr[i] < 0)
             negative++;
-        }else if(arr[i] > 0){
+        else if(arr[i] > 0)
             positive++;
-        }
-    }
     cout<<"Positive: "<<positive<<"\n"<<"Negative: "<<negative<<"\n"<<"Zero: "<<zero<<endl;
 }
 void eleven(){
@@ -151,9 +117,7 @@ void eleven(){
     int size = sizeof(arr)/sizeof(arr[0]);
     int total = 0;
     for (int i = 0; i < size; i++)
-    {
         total += arr[i];
-    }
     cout<<total/size;
 }
 void twelve(){
@@ -161,44 +125,31 @@ void twelve(){
     int size = sizeof(arr)/sizeof(arr[0]);
     int count = 0;
     for (int i = 0; i < size; i++)
-    {
-        if (arr[i] % 2 == 0)
-        {
+        if (arr[i] % 2 == 0){
             cout<<arr[i]<<"\t";
             count++;
         }
-    }
     if (count == 0)
-    {
         cout<<"There are no Even Elements";
-    }
 }
 void thirteen(){
     int arr[] = {10,2,3,40,5,6,1,8, 5};
     int size = sizeof(arr)/sizeof(arr[0]);
     int count = 0;
     for (int i = 0; i < size; i++)
-    {
-        if (arr[i] % 2 != 0)
-        {
+        if (arr[i] % 2 != 0){
             cout<<arr[i]<<"\t";
             count++;
         }
-    }
     if (count == 0)
-    {
         cout<<"There are no Even Elements";
-    }
 }
 void fourteen(){
     int arr[] = {10,2,-3,40,5,6,1,8, -5};
     int size = sizeof(arr)/sizeof(arr[0]);
-    for (int i = 0; i < size; i++)
-    {
+    for (int i = 0; i < size; i++){
         if (arr[i] < 0)
-        {
             arr[i] = 0;
-        }
         cout<<arr[i]<<"\t";
     }
 }
@@ -207,36 +158,26 @@ void fifteen(){
     int size = sizeof(arr)/sizeof(arr[0]);
     int exists = 5;
     for (int i = 0; i < size; i++)
-    {
-        if (arr[i] == exists)
-        {
+        if (arr[i] == exists){
             cout<<exists<<" Exists at ["<<i<<"]th Index";
             break;
         }
-    }
 }
 void sixteen(){
     int arr[] = {10,2,3,40,5,6,1,8, 5};
     int size = sizeof(arr)/sizeof(arr[0]);
     int search = 5;
     for (int i = 0; i < size; i++)
-    {
         if (arr[i] == search)
-        {
             cout<<"Element Found at : "<<i<<" Index"<<endl;
-        }
-    }
 }
 void seventeen(){
     int arr[] = {10,2,3, 7, 0};
     int size = sizeof(arr)/sizeof(arr[0]);
     int mul = 1;
-    for (int i = 0; i < size; i++)
-    {
+    for (int i = 0; i < size; i++){
         if (arr[i] == 0)
-        {
             arr[i] = 1;
-        }
         mul  = mul * arr[i];
     }
     cout<<mul;
@@ -246,35 +187,26 @@ void eighteen(){
     int size = sizeof(arr)/sizeof(arr[0]);
     int count = 0;
     for (int i = 0; i < size; i++)
-    {
-        if (arr[i] % 3 == 0)
-        {
+        if (arr[i] % 3 == 0){
             count++;
             cout<<arr[i];
         }
-    }
     cout<<"Total Elements Divisible by 3: "<<count<<endl;
 }
 void nineteen(){
     int arr[] = {10,2,3,40,5,6,1,8, 5};
     int size = sizeof(arr)/sizeof(arr[0]);
     int temp = arr[0];
-
     arr[0] = arr[size - 1];
     arr[size - 1] = temp;
     for (int i = 0; i < size; i++)
-    {
         cout<<arr[i]<<"\t";
-    }    
 }
 void twenty(){
     int arr[] = {10,2,3,40,5,6,1,8, 5};
     int size = sizeof(arr)/sizeof(arr[0]);
     for (int i = 0; i < size; i = i + 2)
-    {
         cout<<i<<" : "<<arr[i]<<endl;
-    }
-    
 }
 void twentyOne(){
     int arr[] = {10,2,3,10,5,6,1,5};
@@ -283,52 +215,35 @@ void twentyOne(){
     for (int i = 0; i < size; i++){
         int duplicate = 0;
         int count = 0; 
-        for (int j = 0; j < size; j++){
+        for (int j = 0; j < size; j++)
             if (arr[i] == arr[j]){
                 count++;
-                if (count > 1){
+                if (count > 1)
                     duplicate++;
-                    // cout<<arr[j]<<endl;
-                }
             }
-        }
         arr[i] = -1;
     }
-
     int duplicate = 0;
     for (int i = 0; i < size; i++)
-    {
         for (int j = i+1; j < size; j++)
-        {
             if (arr[i] == arr[j])
-            {
                 arr[i] = -1;
-            }
-        }
-    }
     for (int i = 0; i < size; i++)
-    {
         cout<<arr[i]<<endl;
-    }
 }
 void twentyTwo(){
     int arr[] = {10,2,3,40,5,6,1,8, 5,10};
     int size = sizeof(arr)/sizeof(arr[0]);
-
     for (int i = 0; i < size; i++){
         // for (int j = size - 1; (j > 0 && j != i); j--)
-        for (int j = i + 1; j < size; j++){
+        for (int j = i + 1; j < size; j++)
             if (arr[i] == arr[j]){
                 arr[i] = -1;
                 arr[j] = -1;
             }
-        }
         if (arr[i] != -1)
-        {
             cout<<arr[i]<<endl;
-        }
     }
-    
 }
 void twentyThree(){}
 void TwentyFour(){}
@@ -336,39 +251,29 @@ void twentyFive(){
     int arr[] = {1,2,3,1};
     int size = sizeof(arr)/sizeof(arr[0]);
     bool ascending = false;
-    for (int i = 0; i < size-1; i++)
-    {
+    for (int i = 0; i < size-1; i++){
         if (arr[i] < arr[i + 1])
-        {
             ascending = true;
-        }else{
+        else{
             ascending = false;
             break;
         }
     }
     if (ascending)
-    {
         cout<<"Ascending Order"<<endl;
-    }else{
+    else
         cout<<"Not in Ascending Order"<<endl;
-    }
 }
 void twentySix(){}
 void twentySeven(){
     int arr[] = {10,2,3,40,5,6,1,8, 5};
     int size = sizeof(arr)/sizeof(arr[0]);
     int max = arr[0], min = arr[0];
-    for (int i = 0; i < size; i++)
-    {
+    for (int i = 0; i < size; i++){
         if (arr[i] > max)
-        {
             max = arr[i];
-        }
         if (arr[i] < min)
-        {
             min = arr[i];
-        }
-           
     }
     cout<<"Difference between the max "<<max<<" and min "<<min<<" element: "<<max - min<<endl;
 }
@@ -404,12 +309,9 @@ void thirtyFive(){
 void thirtySix(){}
 void thirtySeven(){}
 
-
-
-
-
+/*--------------------------------------------------*/
 int main(){
-    thirtyFive();
+
 }
 
     // int arr[] = {10,2,3,40,5,6,1,8, 5};
