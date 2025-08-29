@@ -90,7 +90,25 @@ void prime(){
     }
     (count2 == 2) ? cout<<n<<" is Prime Number"<<endl : cout<<n<<" is not a Prime Number"<<endl;
 }
-
+void GCD(){
+    int n1 = 9, n2 = 12, gcd = 1;
+    for (int i = 1; i <= min(n1,n2); i++){
+        if (n1 % i == 0 && n2 % i == 0){
+            gcd = i;
+        }
+    }
+    cout<<"Greatest Common Divisor: "<<gcd<<endl;
+}
+void GCD2(){
+    int n1 = 20, n2 = 40,gcd;
+    for (int i = min(n1,n2); i >= 0; i--){
+        if (n1 % i == 0 && n2 % i == 0){
+            cout<<i;
+            break;
+        }
+    }
+    
+}
 int main(){
     int n = 0;
     // cout<<countDigits2(n);
@@ -99,5 +117,7 @@ int main(){
     // armstrong();
     // divisions();
     // division2();
-    prime();
+    // prime();
+    // GCD();
+    // GCD2();
 }
