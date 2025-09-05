@@ -1,5 +1,7 @@
 #include<iostream>
 #include<string>
+#include<algorithm>
+#include<bits/stdc++.h>
 using namespace std;
 
 void printNameNTimes(int i, int n){
@@ -27,12 +29,45 @@ void printLinearNTo1(int i, int n){
     printLinearNTo1(i + 1, n);
     cout<<i<<endl;
 }
+void reverseArray(int arr[], int l, int r){
+    if (l >= r){
+        return;
+    }
+    swap(arr[l], arr[r]);
+    reverseArray(arr, l + 1, r - 1);
+}
+void betterReverseArray(int i, int arr[], int n){
+    if( i >= n/2){
+        return;
+    }
+    swap(arr[i], arr[n - i - 1]);
+    betterReverseArray(i + 1, arr,n);
+}
+void checkPalindrome(){
+    
+}
 
 int main(){
-    int n = 3;
+    // int n = 6;
+    int arr[] = {1, 2, 3, 4, 5, 6};
+    int n = sizeof(arr)/sizeof(arr[0]);
     // printNameNTimes(1,n);
     // printLinearly(0, n);
     // printReverse(n, n);
     // printLinearly1ToN(n,n);
-    printLinearNTo1(1,n);
+    // printLinearNTo1(1,n);
+    // reverseArray(arr, 0, len - 1);    
+    // for (int i = 0; i < len; i++)
+        // cout<<arr[i] << " ";
+
+    betterReverseArray(0, arr, n);
+    // checkPalindrome();
+    for (int i = 0; i < n; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    
+
+
+    return 0;
 }
