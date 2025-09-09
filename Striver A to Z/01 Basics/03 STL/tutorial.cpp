@@ -83,6 +83,6 @@ void List(){
 int main()
 {
     // pairSTL();
-    // vectorSTD();
-    List();
+    vectorSTD();
+    // List();
 }

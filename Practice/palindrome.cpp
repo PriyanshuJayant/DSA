@@ -4,12 +4,6 @@ using namespace std;
 void palindrome(int n){
     int temp = 0;
     int compare = n;
-    // for (int i = 0; i < 5; i++)
-    // {
-    //     temp = temp * 10;
-    //     temp += n % 10;
-    //     n = n / 10;
-    // }
     while (n > 0)
     {
         temp = temp * 10;
