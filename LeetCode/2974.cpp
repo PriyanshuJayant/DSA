@@ -1,6 +1,7 @@
 // 2974. Minimum Number Game
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 // You are given a 0-indexed integer array nums of even length and there is also an empty array arr. Alice and Bob decided to play a game where in every round Alice and Bob will do one move. The rules of the game are as follows:
 
@@ -20,31 +21,50 @@ using namespace std;
 // Output: [5,2]
 // Explanation: In round one, first Alice removes 2 and then Bob removes 5. Then in arr firstly Bob appends and then Alice appends. So arr = [5,2].
 
-int numberGame(vector<int>& nums){// 5,4,3,2
-    int arr[] = {};
-    int Alice = 0,Bob = 0;
-    int n = nums.size();
-    while (nums.size() > 0){
+class Solution {
+public:
+    vector<int> numberGame(vector<int>& nums) {
+        vector<int> arr;
+        sort(nums.begin(), nums.end());
 
-        int min = nums[0];
-        int max = nums[0];
-
-        for (int j = 0; j < n; j++){   
-            if (min < nums[j])
-                min = nums[j];
+        while (!nums.empty()) {
+            for (int i = 0; i < 2 && !nums.empty(); i++) {
+                arr.push_back(nums[1]);
+                arr.push_back(nums[0]);
+                nums.erase(nums.begin(), nums.begin() + 2);
+            }
         }
-        nums.erase(nums.begin() + j);
-
-        Alice = 
-
+        return arr;
     }
-    
-    
+};
 
+int main() {
+    Solution s;
 
-    return Alice;
-}
-int main(){
-    vector<int> nums = {5,4,3,2};
-    numberGame(nums);
+    vector<vector<int>> testCases = {
+        {5, 4, 3, 2},
+        {10, 20},
+        {7, 7, 7, 7},
+        {15, 10, 20, 5},
+        {4, 1, 3, 2},
+        {12, 34, 56, 78},
+        {2, 1, 3, 4},
+        {99, 100, 88, 77},
+        {1, 2, 3, 4, 5, 6},
+        {10, 9, 8, 7, 6, 5, 4, 3}
+    };
+
+    for (auto nums : testCases) {
+        cout << "Input: ";
+        for (int x : nums) cout << x << " ";
+        cout << endl;
+
+        vector<int> result = s.numberGame(nums);
+
+        cout << "Output: ";
+        for (int x : result) cout << x << " ";
+        cout << endl << endl;
+    }
+
+    return 0;
 }
