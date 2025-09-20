@@ -1,5 +1,9 @@
 #include <bits/stdc++.h>
 #include <iostream>
+#include<stack>
+#include<deque>
+#include<algorithm>
+#include <unordered_map>
 using namespace std;
 
 void pairSTL()
@@ -78,11 +82,50 @@ void vectorSTD()
 }
 
 void List(){
-    
+    list<int> ls;
+    ls.push_back(2);// {2}
+    ls.emplace_back(4);// {2,4}
+    ls.push_front(5);// {5,2,4}
+    ls.emplace_front();//   {2,4}
 }
+
+void myDeque(){
+    deque<int> dq;
+    dq.push_back(2);// {2}
+    dq.emplace_back(4);// {2,4}
+    dq.push_front(5);// {5,2,4}
+    dq.emplace_front();//   {2,4}
+}
+
+void myStack(){
+    stack<int>st;
+    st.push(1); //  {1}
+    st.push(2); //  {2,1}
+    st.push(3); //  {3,2,1}
+    st.push(4); //  {4,3,2,1}
+    st.emplace(5);//{5,4,3,2,1}
+
+    cout << st.top() << endl;//  prints 5
+
+    st.pop();   // {4,3,2,1}
+
+    cout << st.top() << endl;// 4
+
+    cout << st.size() << endl;// 4
+
+    cout << st.empty() << endl;// false
+
+    stack<int> st1, st2;
+    st1.swap(st2);
+
+}
+
+
 int main()
 {
     // pairSTL();
-    vectorSTD();
+    // vectorSTD();
     // List();
+    // myDeque();
+    myStack();
 }

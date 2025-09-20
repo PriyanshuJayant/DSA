@@ -1,6 +1,7 @@
 // 1. Two Sum
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 // Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 // You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -23,32 +24,16 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         int n = nums.size();
-        for(int i = 0; i < n; i++)
-            for(int j = i + 1; j < n; j++)
-                if((nums[i] + nums[j]) == target)
-                    return {i, j};
+        sort(nums.begin(), nums.end());
         
+        
+
         return {};
     }
 };
 
-// class Solution2 {
-// public:
-//     vector<int> twoSum(vector<int>& nums, int target) {
-//         int n = nums.size();
-//         for(int i = 0; i < n; i++)
-//             for(int j = i + 1; j < n; j++)
-//                 if((nums[i] + nums[j]) == target)
-//                     return {i, j};
-        
-//         return {};
-//     }
-// };
-
 int main() {
     Solution sol;
-    // Solution2 sol2;
-
     vector<vector<int>> testCases = {
         {2, 7, 11, 15},
         {3, 2, 4},
@@ -59,7 +44,6 @@ int main() {
 
     vector<int> targets = {9, 6, 6, 11, -8};
 
-    // -----------Solution---------------------
     for (int t = 0; t < testCases.size(); t++) {
         vector<int> result = sol.twoSum(testCases[t], targets[t]);
         cout << "Test case " << t + 1 << ": ";
@@ -70,19 +54,6 @@ int main() {
         }
         cout << endl;
     }
-    cout << endl;
-
-    // ------------Solution2--------------------
-    // for (int t = 0; t < testCases.size(); t++) {
-    //     vector<int> result = sol2.twoSum(testCases[t], targets[t]);
-    //     cout << "Test case " << t + 1 << ": ";
-    //     if (!result.empty()) {
-    //         cout << "[" << result[0] << "," << result[1] << "]";
-    //     } else {
-    //         cout << "No pair found";
-    //     }
-    //     cout << endl;
-    // }
 
     return 0;
 }
