@@ -19,20 +19,7 @@ using namespace std;
 // Input: nums = [3,3], target = 6
 // Output: [0,1]
 
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        int n = nums.size();
-        for(int i = 0; i < n; i++)
-            for(int j = i + 1; j < n; j++)
-                if((nums[i] + nums[j]) == target)
-                    return {i, j};
-        
-        return {};
-    }
-};
-
-// class Solution2 {
+// class Solution {
 // public:
 //     vector<int> twoSum(vector<int>& nums, int target) {
 //         int n = nums.size();
@@ -45,9 +32,22 @@ public:
 //     }
 // };
 
+class Solution2 {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        int n = nums.size();
+        for(int i = 0; i < n; i++)
+            for(int j = i + 1; j < n; j++)
+                if((nums[i] + nums[j]) == target)
+                    return {i, j};
+        
+        return {};
+    }
+};
+
 int main() {
-    Solution sol;
-    // Solution2 sol2;
+    // Solution sol;
+    Solution2 sol2;
 
     vector<vector<int>> testCases = {
         {2, 7, 11, 15},
@@ -60,21 +60,8 @@ int main() {
     vector<int> targets = {9, 6, 6, 11, -8};
 
     // -----------Solution---------------------
-    for (int t = 0; t < testCases.size(); t++) {
-        vector<int> result = sol.twoSum(testCases[t], targets[t]);
-        cout << "Test case " << t + 1 << ": ";
-        if (!result.empty()) {
-            cout << "[" << result[0] << "," << result[1] << "]";
-        } else {
-            cout << "No pair found";
-        }
-        cout << endl;
-    }
-    cout << endl;
-
-    // ------------Solution2--------------------
     // for (int t = 0; t < testCases.size(); t++) {
-    //     vector<int> result = sol2.twoSum(testCases[t], targets[t]);
+    //     vector<int> result = sol.twoSum(testCases[t], targets[t]);
     //     cout << "Test case " << t + 1 << ": ";
     //     if (!result.empty()) {
     //         cout << "[" << result[0] << "," << result[1] << "]";
@@ -83,6 +70,19 @@ int main() {
     //     }
     //     cout << endl;
     // }
+    // cout << endl;
+
+    // ------------Solution2--------------------
+    for (int t = 0; t < testCases.size(); t++) {
+        vector<int> result = sol2.twoSum(testCases[t], targets[t]);
+        cout << "Test case " << t + 1 << ": ";
+        if (!result.empty()) {
+            cout << "[" << result[0] << "," << result[1] << "]";
+        } else {
+            cout << "No pair found";
+        }
+        cout << endl;
+    }
 
     return 0;
 }
