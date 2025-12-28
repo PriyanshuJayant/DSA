@@ -16,7 +16,7 @@ public:
 };
 
 int main() {
-    Solution s;
+    Solution sol;
 
     vector<vector<int>> testCases = {
         {-1,-2,-3,-4},
@@ -29,14 +29,17 @@ int main() {
         {5,-3,0,-2}
     };
 
-    for (auto nums : testCases) {
-        cout << "Input: ";
-        for (int x : nums) cout << x << " ";
-        cout << "\n";
+    for(int i = 0; i < testCases.size(); i++) {
+        vector<int> nums = testCases[i];
+        int result = sol.arraySign(nums);
 
-        int result = s.arraySign(nums);
+        cout << "Test Case " << i + 1 << ": Success" << endl;
 
-        cout << "Output: " << result << "\n\n";
+        cout << "  Input: ";
+        for(int x : nums) cout << x << " ";
+        cout << endl;
+
+        cout << "  Output: " << result << endl << endl;
     }
 
     return 0;

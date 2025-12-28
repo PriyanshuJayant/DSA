@@ -1,5 +1,5 @@
 // 9. Palindrome Number
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 // Example 1:
 // Input: x = 121
@@ -22,36 +22,34 @@ public:
         int l = x;
         if(x < 0) return false;
         if(x == 0) return true;
+
         long long reverse = 0;
-        while (x > 0)
-        {
+        while (x > 0) {
             int digit = x % 10;
-            x = x/10;
+            x = x / 10;
             reverse = reverse * 10 + digit;
         }
-        if (l == reverse) return true;
-        
-        return false;
+
+        return l == reverse;
     }
 };
 
 int main() {
     Solution sol;
 
-    // Test case 1
-    int x1 = 121;
-    cout << x1 << " -> " 
-         << (sol.isPalindrome(x1) ? "true" : "false") << endl;
+    int testCases[] = {121, -121, 10, 0, 1221};
+    int n = sizeof(testCases) / sizeof(testCases[0]);
 
-    // Test case 2
-    int x2 = -121;
-    cout << x2 << " -> " 
-         << (sol.isPalindrome(x2) ? "true" : "false") << endl;
+    for(int i = 0; i < n; i++) {
+        int input = testCases[i];
+        bool output = sol.isPalindrome(input);
 
-    // Test case 3
-    int x3 = 10;
-    cout << x3 << " -> " 
-         << (sol.isPalindrome(x3) ? "true" : "false") << endl;
+        cout << "Test Case " << i + 1 << ": "
+             << (output ? "Success" : "Fail") << endl;
+
+        cout << "  Input: " << input << "" << endl;
+        cout << "  Output: " << (output ? "true" : "false") << "" << endl << endl;
+    }
 
     return 0;
 }

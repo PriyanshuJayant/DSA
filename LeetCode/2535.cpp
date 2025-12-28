@@ -1,5 +1,4 @@
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 class Solution {
@@ -8,7 +7,7 @@ public:
         int elementSum = 0;
         int digitSum = 0;
 
-        while (nums.size() != 0) {
+        while (!nums.empty()) {
             elementSum += nums.front();
 
             if (nums.front() > 9) {
@@ -17,7 +16,7 @@ public:
 
                 while (twoDigitSum > 0) {
                     twoDigit += twoDigitSum % 10;
-                    twoDigitSum = twoDigitSum / 10;
+                    twoDigitSum /= 10;
                 }
                 digitSum += twoDigit;
             } else {
@@ -26,12 +25,14 @@ public:
 
             nums.erase(nums.begin());
         }
-        return abs(elementSum - digitSum); 
+
+        return abs(elementSum - digitSum);
     }
 };
 
 int main() {
-    Solution s;
+    Solution sol;
+
     vector<vector<int>> testCases = {
         {5, 4, 3, 2},
         {10, 20},
@@ -45,15 +46,17 @@ int main() {
         {10, 9, 8, 7, 6, 5, 4, 3}
     };
 
-    for (auto nums : testCases) {
-        cout << "Input: ";
-        for (int x : nums) cout << x << " ";
+    for(int i = 0; i < testCases.size(); i++) {
+        vector<int> nums = testCases[i];
+        int result = sol.differenceOfSum(nums);
+
+        cout << "Test Case " << i + 1 << ": Success" << endl;
+
+        cout << "  Input: ";
+        for(int x : testCases[i]) cout << x << " ";
         cout << endl;
 
-        vector<int> copy = nums;
-        int result = s.differenceOfSum(copy);
-
-        cout << "Output: " << result << endl << endl;
+        cout << "  Output: " << result << endl << endl;
     }
 
     return 0;

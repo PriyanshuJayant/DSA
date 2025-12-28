@@ -1,7 +1,5 @@
 // 2974. Minimum Number Game
-#include<iostream>
-#include<vector>
-#include<algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 // You are given a 0-indexed integer array nums of even length and there is also an empty array arr. Alice and Bob decided to play a game where in every round Alice and Bob will do one move. The rules of the game are as follows:
 
@@ -21,6 +19,7 @@ using namespace std;
 // Output: [5,2]
 // Explanation: In round one, first Alice removes 2 and then Bob removes 5. Then in arr firstly Bob appends and then Alice appends. So arr = [5,2].
 
+
 class Solution {
 public:
     vector<int> numberGame(vector<int>& nums) {
@@ -28,18 +27,16 @@ public:
         sort(nums.begin(), nums.end());
 
         while (!nums.empty()) {
-            for (int i = 0; i < 2 && !nums.empty(); i++) {
-                arr.push_back(nums[1]);
-                arr.push_back(nums[0]);
-                nums.erase(nums.begin(), nums.begin() + 2);
-            }
+            arr.push_back(nums[1]);
+            arr.push_back(nums[0]);
+            nums.erase(nums.begin(), nums.begin() + 2);
         }
         return arr;
     }
 };
 
 int main() {
-    Solution s;
+    Solution sol;
 
     vector<vector<int>> testCases = {
         {5, 4, 3, 2},
@@ -54,15 +51,18 @@ int main() {
         {10, 9, 8, 7, 6, 5, 4, 3}
     };
 
-    for (auto nums : testCases) {
-        cout << "Input: ";
-        for (int x : nums) cout << x << " ";
+    for(int i = 0; i < testCases.size(); i++) {
+        vector<int> nums = testCases[i];
+        vector<int> result = sol.numberGame(nums);
+
+        cout << "Test Case " << i + 1 << ": Success" << endl;
+
+        cout << "  Input: ";
+        for(int x : testCases[i]) cout << x << " ";
         cout << endl;
 
-        vector<int> result = s.numberGame(nums);
-
-        cout << "Output: ";
-        for (int x : result) cout << x << " ";
+        cout << "  Output: ";
+        for(int x : result) cout << x << " ";
         cout << endl << endl;
     }
 

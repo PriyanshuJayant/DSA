@@ -1,6 +1,5 @@
 // 258. Add Digits 
-#include <iostream>
-#include<vector>
+#include <bits/stdc++.h>
 using namespace std;
 // Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
 
@@ -15,6 +14,7 @@ using namespace std;
 // Example 2:
 // Input: num = 0
 // Output: 0
+
 
 class Solution {
 public:
@@ -33,11 +33,17 @@ public:
 
 int main() {
     Solution sol;
+
     vector<int> testCases = {38, 0, 258, 99, 12345};
 
-    for (int i = 0; i < testCases.size(); ++i) {
-        int result = sol.addDigits(testCases[i]);
-        cout << "Test case " << i + 1 << " (" << testCases[i] << ") => Result: " << result << endl;
+    for(int i = 0; i < testCases.size(); i++) {
+        int input = testCases[i];
+        int output = sol.addDigits(input);
+
+        cout << "Test Case " << i + 1 << ": Success" << endl;
+        cout << "  Input: " << input << "" << endl;
+        cout << "  Output: " << output << "" << endl << endl;
     }
+
     return 0;
 }

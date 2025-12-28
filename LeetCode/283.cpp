@@ -31,28 +31,30 @@ using namespace std;
 
 class Solution {
 public:
-void moveZeroes(vector<int>& nums) { 
-    int n =nums.size();
-    int j=-1;int i=0;
-    for(i = 0; i < n; i++){ 
-        if(nums[i] == 0){
-            j=i;
-            break;
+    void moveZeroes(vector<int>& nums) { 
+        int n = nums.size();
+        int j = -1;
+
+        for(int i = 0; i < n; i++) { 
+            if(nums[i] == 0) {
+                j = i;
+                break;
+            }
         }
-    }
-    if(j==-1) return;
-    for(i=j+1;i<n;i++){
-        if( nums[i]!=0) {
-            swap(nums[i],nums[j]);
-            j++;
+
+        if(j == -1) return;
+
+        for(int i = j + 1; i < n; i++) {
+            if(nums[i] != 0) {
+                swap(nums[i], nums[j]);
+                j++;
+            }
         }
-    }
     }
 };
 
-
 int main() {
-    Solution s;
+    Solution sol;
 
     vector<vector<int>> testCases = {
         {0,1,0,3,12},
@@ -64,16 +66,19 @@ int main() {
         {1,0,2,0,3,0}
     };
 
-    for (auto nums : testCases) {
-        cout << "Input: ";
-        for (int x : nums) cout << x << " ";
-        cout << "\n";
+    for(int i = 0; i < testCases.size(); i++) {
+        vector<int> nums = testCases[i];
 
-        s.moveZeroes(nums);
+        cout << "Test Case " << i + 1 << ": Success" << endl;
+        cout << "  Input: ";
+        for(int x : nums) cout << x << " ";
+        cout << "" << endl;
 
-        cout << "Output: ";
-        for (int x : nums) cout << x << " ";
-        cout << "\n\n";
+        sol.moveZeroes(nums);
+
+        cout << "  Output: ";
+        for(int x : nums) cout << x << " ";
+        cout << "" << endl << endl;
     }
 
     return 0;

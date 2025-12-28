@@ -1,6 +1,5 @@
 // 2520. Count the Digits That Divide a Number
-#include<iostream>
-#include<vector>
+#include <bits/stdc++.h>
 using namespace std;
 // Given an integer num, return the number of digits in num that divide num.
 // An integer val divides nums if nums % val == 0.
@@ -20,45 +19,42 @@ using namespace std;
 // Output: 4
 // Explanation: 1248 is divisible by all of its digits, hence the answer is 4.
 
+
 class Solution {
 public:
     int countDigits(int num) {
         int val = num;
         int count = 0;
         int temp = 0;
-        while (num > 0){
+
+        while (num > 0) {
             temp += num % 10;
-            if(temp != 0 && val % temp == 0){
+
+            if (temp != 0 && val % temp == 0)
                 count++;
-            }
+
             num = num / 10;
             temp = 0;
         }
+
         return count;
     }
 };
 
-
 int main() {
-    Solution s;
+    Solution sol;
 
     vector<int> testCases = {
-        7,
-        121,
-        1248,
-        100,
-        36,
-        128,
-        111,
-        75,
-        99,
-        123456
+        7, 121, 1248, 100, 36, 128, 111, 75, 99, 123456
     };
 
-    for (int num : testCases) {
-        cout << "Input: " << num << endl;
-        int result = s.countDigits(num);
-        cout << "Output: " << result << endl << endl;
+    for(int i = 0; i < testCases.size(); i++) {
+        int input = testCases[i];
+        int output = sol.countDigits(input);
+
+        cout << "Test Case " << i + 1 << ": Success" << endl;
+        cout << "  Input: " << input << endl;
+        cout << "  Output: " << output << endl << endl;
     }
 
     return 0;
