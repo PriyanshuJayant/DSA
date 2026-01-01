@@ -1,18 +1,29 @@
 #include <bits/stdc++.h>
+#include<cmath>
 using namespace std;
 
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& nums) {
-        vector<int> result;
-        for (int i = 0; i < nums.size(); i++){
-            nums[i] = nums[i] * nums[i];
+        int n = nums.size();
+        vector<int> result(n);
+
+        int left = 0;
+        int right = n - 1;
+        int position = n - 1;
+        // -4 -1 0 3 10 
+        while(left <= right){
+            if(abs(nums[left]) > abs(nums[right])){
+                result[position] = nums[left] * nums[left];
+                left++;
+            }else{
+                result[position] = nums[right] * nums[right];
+                right--;
+            }
+            position --;
         }
-        int last = nums[nums.size() - 1];
-        int first = nums[0];
 
-
-        return nums;
+        return result;
     }
 };
 
