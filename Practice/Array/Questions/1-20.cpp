@@ -211,7 +211,6 @@ void twenty(){
 void twentyOne(){
     int arr[] = {10,2,3,10,5,6,1,5};
     int size = sizeof(arr)/sizeof(arr[0]);
-    int temp = 0;
     for (int i = 0; i < size; i++){
         int duplicate = 0;
         int count = 0; 
