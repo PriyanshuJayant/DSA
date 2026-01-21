@@ -1,0 +1,117 @@
+🔰 Level 1: Linked List Basics (1-20)
+ 
+[ ] Focus: node creation, traversal, insertion, deletion
+[ ] Create a singly linked list and print it.
+[ ] Count number of nodes in a linked list.
+[ ] Insert a node at the beginning.
+[ ] Insert a node at the end.
+[ ] Insert a node at a specific position.
+[ ] Delete the first node.
+[ ] Delete the last node.
+[ ] Delete a node at a given position.
+[ ] Search an element in a linked list.
+[ ] Find the index of a given element.
+[ ] Find the maximum element in a linked list.
+[ ] Find the minimum element.
+[ ] Calculate sum of all nodes.
+[ ] Count number of even-valued nodes.
+[ ] Count number of odd-valued nodes.
+[ ] Print linked list in reverse (using loop + stack).
+[ ] Copy one linked list to another.
+[ ] Compare two linked lists.
+[ ] Check if linked list is empty.
+[ ] Clear the entire linked list.
+[ ] ✅ After this level:
+[ ] You should be comfortable manipulating next pointers.
+
+⏫ Level 2: Slightly Logical (21-40)
+
+[ ] Reverse a linked list (iterative). ⭐
+[ ] Reverse a linked list (recursive).
+[ ] Find the middle element of linked list. ⭐
+[ ] Find the nth node from the end.
+[ ] Count frequency of a given element.
+[ ] Remove duplicates from a sorted linked list.
+[ ] Remove duplicates from an unsorted linked list.
+[ ] Check if linked list is sorted.
+[ ] Swap two nodes (without swapping data).
+[ ] Pairwise swap nodes.
+[ ] Move last node to the front.
+[ ] Delete all nodes with a given key.
+[ ] Insert node in a sorted linked list.
+[ ] Find length using recursion.
+[ ] Find the second largest element.
+[ ] Find the second smallest element.
+[ ] Rotate linked list by k nodes.
+[ ] Print alternate nodes.
+[ ] Delete alternate nodes.
+[ ] Merge two linked lists (simple merge).
+
+🔄 Level 3: Pattern-Based Thinking (41-60)
+
+[ ] Detect loop in a linked list. ⭐⭐⭐
+[ ] Find length of loop.
+[ ] Find starting point of loop. ⭐⭐⭐
+[ ] Remove loop from linked list.
+[ ] Check if linked list is palindrome. ⭐⭐
+[ ] Find intersection point of two linked lists. ⭐⭐⭐
+[ ] Merge two sorted linked lists. ⭐⭐
+[ ] Find union of two linked lists.
+[ ] Find intersection of two linked lists.
+[ ] Segregate even and odd nodes.
+[ ] Segregate 0s, 1s, and 2s.
+[ ] Reverse linked list in groups of k. ⭐⭐⭐
+[ ] Delete nodes having greater value on right.
+[ ] Rearrange linked list in zig-zag fashion.
+[ ] Add two numbers represented by linked lists. ⭐⭐⭐
+[ ] Multiply two numbers represented by linked lists.
+[ ] Find maximum sum sublist.
+[ ] Clone a linked list (without random pointer).
+[ ] Remove nodes with duplicate values entirely.
+[ ] Check if linked list length is even or odd.
+
+🧠 Level 4: Logic Building & Interview Patterns (61-80)
+
+[ ] Flatten a linked list.
+[ ] Sort a linked list using merge sort. ⭐⭐⭐⭐
+[ ] Check if linked list is circular.
+[ ] Convert binary number in linked list to integer.
+[ ] Reverse alternate k nodes.
+[ ] Delete middle node.
+[ ] Remove duplicates using hashing.
+[ ] Find pair with given sum.
+[ ] Rearrange linked list by odd and even positions.
+[ ] Rotate linked list clockwise.
+[ ] Clone linked list with random pointer. ⭐⭐⭐⭐
+[ ] Sort linked list containing only 0s and 1s.
+[ ] Reverse linked list using stack.
+[ ] Find triplet with given sum.
+[ ] Merge k sorted linked lists. ⭐⭐⭐⭐
+[ ] Split linked list into two halves.
+[ ] Check if two linked lists are identical.
+[ ] Convert array to linked list.
+[ ] Convert linked list to array.
+[ ] Find the last node of a circular linked list.
+
+🚀 Level 5: Advanced & Interview-Grade (81-100)
+
+[ ] LRU Cache implementation using linked list + hashmap. ⭐⭐⭐⭐⭐
+[ ] LFU Cache (conceptual + basic implementation).
+[ ] Reverse nodes at alternate levels.
+[ ] Find longest palindrome in linked list.
+[ ] Delete nodes in range [a, b].
+[ ] Find minimum number of operations to sort linked list.
+[ ] Convert linked list to BST. ⭐⭐⭐⭐
+[ ] Flatten multilevel linked list.
+[ ] Find intersection of Y-shaped linked list.
+[ ] Rearrange linked list to maximize sum.
+[ ] Reorder linked list (L0 → Ln → L1 → Ln-1). ⭐⭐⭐
+[ ] Check if linked list can be split into equal halves.
+[ ] Add 1 to number represented by linked list.
+[ ] Reverse linked list between positions m and n.
+[ ] Remove duplicates allowing at most twice.
+[ ] Find kth node from middle.
+[ ] Sort linked list by absolute difference.
+[ ] Reverse linked list in spiral order.
+[ ] Delete nodes with same sum.
+[ ] Design browser history using linked list. ⭐⭐⭐⭐

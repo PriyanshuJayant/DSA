@@ -1,5 +1,6 @@
 #include<iostream>
-#include<cmath>//NAN
+#include<cmath>
+#include<vector>
 using namespace std;
 
 void one(){
@@ -202,6 +203,9 @@ void nineteen(){
     for (int i = 0; i < size; i++)
         cout<<arr[i]<<"\t";
 }
+
+// Level 2
+
 void twenty(){
     int arr[] = {10,2,3,40,5,6,1,8, 5};
     int size = sizeof(arr)/sizeof(arr[0]);
@@ -245,7 +249,7 @@ void twentyTwo(){
     }
 }
 void twentyThree(){}
-void TwentyFour(){}
+void twentyFour(){}
 void twentyFive(){
     int arr[] = {1,2,3,1};
     int size = sizeof(arr)/sizeof(arr[0]);
@@ -263,7 +267,23 @@ void twentyFive(){
     else
         cout<<"Not in Ascending Order"<<endl;
 }
-void twentySix(){}
+void twentySix(){
+    vector<int> arr = {1,2,3,4,5};
+    int n = arr.size();
+    int left = 0;
+    int right = arr.size() - 1;
+
+    while(left < right){
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+            left++;
+            right--;
+    }
+    for(int x = 0 ; x < n ; x++){
+        cout<< arr[x] << " ";
+    }
+}
 void twentySeven(){
     int arr[] = {10,2,3,40,5,6,1,8, 5};
     int size = sizeof(arr)/sizeof(arr[0]);
@@ -308,8 +328,28 @@ void thirtyFive(){
 void thirtySix(){}
 void thirtySeven(){}
 
+// Level 3:
+
+void fortyOne(){}
+void fortyTwo(){
+    vector<int> arr = {1,2,0,3,4,0,5,6};
+    int size = arr.size();
+
+    
+}
+
 /*--------------------------------------------------*/
 int main(){
+
+
+
+
+
+
+
+
+
+
 
 }
 

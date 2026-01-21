@@ -1,0 +1,114 @@
+🔰 Level 1: String Basics (1-20)
+
+[ ] Print a string.
+[ ] Find the length of a string (without using .length()).
+[ ] Count number of vowels in a string.
+[ ] Count number of consonants.
+[ ] Count number of digits in a string.
+[ ] Count number of spaces.
+[ ] Convert string to uppercase.
+[ ] Convert string to lowercase.
+[ ] Reverse a string.
+[ ] Check if a string is palindrome.
+[ ] Copy one string to another.
+[ ] Compare two strings (lexicographically).
+[ ] Count frequency of a given character.
+[ ] Replace all spaces with _.
+[ ] Remove all spaces from a string.
+[ ] Print characters at even indices.
+[ ] Print characters at odd indices.
+[ ] Check if string contains only alphabets.
+[ ] Check if string contains only digits.
+[ ] Count words in a string.
+
+⏫ Level 2: Slightly Logical (21-40)
+
+[ ] Find the first occurrence of a character.
+[ ] Find the last occurrence of a character.
+[ ] Find all indices of a given character.
+[ ] Count frequency of each character (a-z).
+[ ] Remove all vowels from a string.
+[ ] Remove all consonants from a string.
+[ ] Replace a given character with another.
+[ ] Check if two strings are equal (manual comparison).
+[ ] Reverse words in a string.
+[ ] Find the largest word in a string.
+[ ] Find the smallest word in a string.
+[ ] Capitalize first letter of each word.
+[ ] Toggle case of every character.
+[ ] Count how many times a word appears.
+[ ] Check if string is sorted (alphabetically).
+[ ] Find the difference between number of vowels and consonants.
+[ ] Insert a character at a given index.
+[ ] Delete a character from a given index.
+[ ] Remove duplicate characters.
+[ ] Print unique characters in a string.
+
+🔄 Level 3: Pattern-Based Thinking (41-60)
+
+[ ] Check if two strings are anagrams. ⭐
+[ ] Find the first non-repeating character. ⭐
+[ ] Find the first repeating character.
+[ ] Check if string contains all unique characters.
+[ ] Find the longest word in a sentence.
+[ ] Find the shortest word in a sentence.
+[ ] Count palindromic characters.
+[ ] Count palindromic substrings (brute force).
+[ ] Generate all substrings of a string.
+[ ] Count total number of substrings.
+[ ] Check if string is rotation of another string. ⭐
+[ ] Check if string contains another string.
+[ ] Find longest prefix of a string.
+[ ] Find longest common prefix among strings. ⭐ (Interview)
+[ ] Remove consecutive duplicate characters.
+[ ] Find the most frequent character.
+[ ] Replace each character with next alphabet.
+[ ] Count uppercase and lowercase letters.
+[ ] Reverse only vowels in a string.
+[ ] Reverse only consonants in a string.
+
+🧠 Level 4: Logic Building & Interview Patterns (61-80)
+
+[ ] Find longest palindromic substring (brute force). ⭐
+[ ] Find longest palindromic substring (optimized). ⭐⭐⭐
+[ ] Check if string can be palindrome after removing one char.
+[ ] Count number of substrings with same start and end char.
+[ ] Find longest substring without repeating characters. ⭐⭐⭐
+[ ] Find smallest substring containing all characters of another string. ⭐⭐⭐
+[ ] Count occurrences of all substrings.
+[ ] Find lexicographically smallest rotation.
+[ ] Check if string is valid shuffle of two strings.
+[ ] Count number of words ending with a vowel.
+[ ] Check if string is valid parentheses. ⭐⭐⭐
+[ ] Remove invalid parentheses.
+[ ] Find minimum insertions to make string palindrome.
+[ ] Find minimum deletions to make string palindrome.
+[ ] Convert string to integer (atoi).
+[ ] Implement strstr() manually.
+[ ] Count distinct substrings.
+[ ] Find longest repeating substring.
+[ ] Check if string is isomorphic.
+[ ] Group anagrams together. ⭐⭐⭐
+
+🚀 Level 5: Interview-Grade & Advanced (81-100)
+
+[ ] Implement KMP pattern matching algorithm. ⭐⭐⭐⭐
+[ ] Implement Rabin-Karp algorithm.
+[ ] Find all anagram indices in a string. ⭐⭐⭐
+[ ] Longest common subsequence (LCS). ⭐⭐⭐⭐
+[ ] Longest common substring.
+[ ] Edit distance between two strings. ⭐⭐⭐⭐
+[ ] Count number of ways to split string into palindromes.
+[ ] Minimum window substring. ⭐⭐⭐⭐
+[ ] Check if string can be segmented (Word Break). ⭐⭐⭐
+[ ] Decode encoded string (e.g. 3[a2[b]]). ⭐⭐⭐
+[ ] Find smallest lexicographic string after swaps.
+[ ] Check if string follows pattern.
+[ ] Rearrange string so no two adjacent chars are same.
+[ ] Count palindromic subsequences.
+[ ] Find longest substring with at most K distinct characters.
+[ ] Check if two strings differ by at most one edit.
+[ ] Find all permutations of a string.
+[ ] Rank of a string among its permutations.
+[ ] Find the shortest common supersequence.
+[ ] Design a string compression algorithm. ⭐⭐⭐
