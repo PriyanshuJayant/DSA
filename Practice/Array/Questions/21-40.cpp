@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<unordered_map>
+#include<map>
 using namespace std;
 
 // void twentyOne(){
@@ -133,7 +134,24 @@ void twentyNine(){}
 void thirty(){}
 void thirtyOne(){}
 void thirtyTwo(){}
-void thirtyThree(){}
+void thirtyThree(){
+    // Bubble Sort
+    vector<int> arr = {7,6,5,4,3,2,1};
+    int n = arr.size();
+
+    // for (int i = 0; i < n - 1 ; i++){
+    //     for (int j = 0; j < n - i - 1; j++){
+    //         if (arr[i] > arr[j]){
+    //             swap(arr[j], arr[j + 1]);
+    //         }
+    //     }
+    // }
+    
+
+    for(auto i : arr){
+        cout<< i << " ";
+    }
+}
 void thirtyFour(){}
 void thirtyFive(){
     int arr[] = {10,2,3,40,5,6,1,8, 5};
@@ -152,19 +170,23 @@ void thirtyFive(){
 void thirtySix(){}
 void thirtySeven(){}
 void thirtyEight(){}
-void thirtyNine(){}
-void forty(){
-    int arr[] = {1, 2, 2, 3, 1, 1, 4, 4};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    unordered_map<int, int> freq;
+void thirtyNine(){
+    vector<int> arr = {1,2,3,4,5,6,7};
+    int n = arr.size();
+
+    int old = 3;
+    int new_num = 30;
     for (int i = 0; i < n; i++){
-    freq[arr[i]]++;
+        if (arr[i] == old){
+            arr[i] = new_num;
+        }
     }
-    for (auto i : freq){
-        cout << i.first << " -> " << i.second << endl;
+    for(auto i : arr){
+        cout<< i<< " ";
     }
-}   
-void forty_WithoutMap(){
+    
+}  
+void forty(){
     int arr[] = {1, 2, 2, 3, 1, 1, 4, 4};
     int n = sizeof(arr) / sizeof(arr[0]);
     
@@ -188,10 +210,32 @@ void forty_WithoutMap(){
         current = 1;
     }
 }
+void forty_unordered_map(){
+    int arr[] = {1, 2, 2, 3, 1, 1, 4, 4};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    unordered_map<int, int> freq;
+    for (int i = 0; i < n; i++){
+    freq[arr[i]]++;
+    }
+    for (auto i : freq){
+        cout << i.first << " -> " << i.second << endl;
+    }
+}
+void forty_map(){
+    vector<int> arr = {1,2,2,3,1,1,4,4};
+    int n = arr.size();
 
+    map<int, int> freq;
+
+    for (int i = 0; i < n; i++){
+        freq[arr[i]]++;
+    }
+    for (auto it : freq) {
+        cout << it.first << " : " << it.second << endl;
+    }
+}
 
 int main(){
-    forty();
-    
+    thirtyThree();
     return 0;
 }

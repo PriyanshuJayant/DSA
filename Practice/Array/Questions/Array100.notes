@@ -35,13 +35,13 @@
 [ ] 30. Shift all elements to the left by one.
 [ ] 31. Rotate an array by k positions (left).
 [ ] 32. Rotate an array by k positions (right).
-[ ] 33. Sort the array using bubble sort.
+[√] 33. Sort the array using bubble sort.
 [ ] 34. Sort the array using selection sort.
 [√] 35. Print all elements greater than the average.
 [ ] 36. Insert an element at a specific index.
 [ ] 37. Delete an element from a specific index.
 [ ] 38. Find all indexes of a given number.
-[ ] 39. Replace a given element with another number.
+[√] 39. Replace a given element with another number.
 [√] 40. Count how many times each element appears (frequency map).
 
 🔄 Level 3: Pattern-Based Thinking (41-60)

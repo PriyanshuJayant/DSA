@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C++ Debug (GDB)",
+            "name": "Debug C++ File",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
@@ -10,7 +10,7 @@
             "stopAtEntry": true,
             "cwd": "${fileDirname}",
             "environment": [],
-            "externalConsole": false,
+            "externalConsole": true,
             "MIMode": "gdb",
             "setupCommands": [
                 {
@@ -25,8 +25,7 @@
                 }
             ],
             "preLaunchTask": "C/C++: g++ build active file",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "console": "integratedTerminal"
+            "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
 }
